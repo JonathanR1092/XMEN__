@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XMEN.Abstractions\XMEN.Abstractions.csproj" />
+    <ProjectReference Include="..\XMEN.Entities\XMEN.Entities.csproj" />
+    <ProjectReference Include="..\XMEN.Repository\XMEN.Repository.csproj" />
+    <ProjectReference Include="..\XMEN.Services\XMEN.Services.csproj" />
+  </ItemGroup>
+
+</Project>
