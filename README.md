@@ -16,3 +16,7 @@ API REST - Define si una persona es un mutante o un humano según su secuencia d
 
 1. Reporte de covertura de las pruebas unitarias (ReportCoverage).
 2. Colección de postman con los metodos del API (XMEN.postman_collection).
+
+# Url API Azure
+
+ - webxmenapi.azurewebsites.net/api/{controller}/{Service} - ejemplo => webxmenapi.azurewebsites.net/api/Mutant/isMutant
