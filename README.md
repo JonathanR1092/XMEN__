@@ -9,7 +9,7 @@ API REST - Define si una persona es un mutante o un humano según su secuencia d
 4. Seleccionar la ejecución del proyecto como IIS Express o apuntando a la misma WebApi.
 5. Luego se abrira la ventana con la documentación en Swagger del Api.
 6. Registrarse o loguearse para utilizar el API con los metodos del api (/api/Auth/Register - /api/Auth/Login).
-7. Con el token generado por el servicio Login se debe colocar en el apartado de autorización usando el tipo Bearer Token.
+7. Con el token generado por el servicio Login colocarlo en el apartado de autorización usando el tipo Bearer Token.
 8. Puedes utilizar la API para comprobar si eres un mutante !!
 
 # Documentos adicionales en repositorio directorio Documents
