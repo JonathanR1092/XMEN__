@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "55b4618c-97fd-4ae2-bb8f-ee2dd7cd3959",
+		"name": "XMEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IsMutant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjI0MGVkNTcyLWVkOGUtNDg2ZS05ZTdkLWM0ZGUwMzZhODgyNCIsInN1YiI6ImpyMUAuY29tIiwiZW1haWwiOiJqcjFALmNvbSIsIm5iZiI6MTY1MTUzMDA4OSwiZXhwIjoxNjUxNTUxNjg5LCJpYXQiOjE2NTE1MzAwODl9.Vgnnw7SClHP3CThrJ8Jx_5k2TUlNa2BoVqzq_U1AImxDa_yPMS1RiR1H3pqclKyJzn-UujUh30vNrS7wnm90Vg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dna\":[\"GACAA\", \"CAttC\", \"GTgTT\", \"gtccg\", \"ttgtc\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{Azure}}/api/Mutant/isMutant",
+					"protocol": "https",
+					"host": [
+						"{{Azure}}"
+					],
+					"path": [
+						"api",
+						"Mutant",
+						"isMutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterAuth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Jonathan\",\r\n  \"Email\": \"jr1@.com\",\r\n  \"Password\": \"123Jr*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{Azure}}/api/Auth/Register",
+					"protocol": "https",
+					"host": [
+						"{{Azure}}"
+					],
+					"path": [
+						"api",
+						"Auth",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginAuth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Email\": \"jr1@.com\",\r\n  \"Password\": \"123Jr*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{Azure}}/api/Auth/Login",
+					"protocol": "https",
+					"host": [
+						"{{Azure}}"
+					],
+					"path": [
+						"api",
+						"Auth",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjI0MGVkNTcyLWVkOGUtNDg2ZS05ZTdkLWM0ZGUwMzZhODgyNCIsInN1YiI6ImpyMUAuY29tIiwiZW1haWwiOiJqcjFALmNvbSIsIm5iZiI6MTY1MTUzMDA4OSwiZXhwIjoxNjUxNTUxNjg5LCJpYXQiOjE2NTE1MzAwODl9.Vgnnw7SClHP3CThrJ8Jx_5k2TUlNa2BoVqzq_U1AImxDa_yPMS1RiR1H3pqclKyJzn-UujUh30vNrS7wnm90Vg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{Azure}}/api/Mutant/Stats",
+					"protocol": "https",
+					"host": [
+						"{{Azure}}"
+					],
+					"path": [
+						"api",
+						"Mutant",
+						"Stats"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Azure",
+			"value": "webxmenapi.azurewebsites.net"
+		}
+	]
+}
