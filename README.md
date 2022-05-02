@@ -14,5 +14,5 @@ API REST - Define si una persona es un mutante o un humano según su secuencia d
 
 # Documentos adicionales en repositorio directorio Documents
 
-1. Reporte de covertura de las pruebas unitarias.
-2. Colección de postman con los metodos del API.
+1. Reporte de covertura de las pruebas unitarias (ReportCoverage).
+2. Colección de postman con los metodos del API (XMEN.postman_collection).
