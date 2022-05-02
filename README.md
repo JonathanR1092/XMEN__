@@ -12,7 +12,7 @@ API REST - Define si una persona es un mutante o un humano según su secuencia d
 7. Con el token generado por el servicio Login se debe colocar en el apartado de autorización usando el tipo Bearer Token.
 8. Puedes utilizar la API para comprobar si eres un mutante !!
 
-# Documentos adicionales en Wiki
+# Documentos adicionales en repositorio directorio Documents
 
 1. Reporte de covertura de las pruebas unitarias.
 2. Colección de postman con los metodos del API.
